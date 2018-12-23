@@ -22,10 +22,10 @@ gulp.task("style", function(){
 	.pipe(postcss([
 		autoprefixer()
 		]))
-	.pipe(gulp.dest("build/scc"))
+	.pipe(gulp.dest("build/css"))
 	.pipe(minify())
 	.pipe(rename("style.min.css"))
-	.pipe(gulp.dest("build/scc"))
+	.pipe(gulp.dest("build/css"))
 	.pipe(server.stream());
 });
 
@@ -81,8 +81,7 @@ gulp.task("serve", function(){
 	});
 
 	gulp.watch("source/sass/**/*.{scss, sass}", ["style"]);
-	gulp.watch("source/*.html", ["html"])
-  .on("change", server.reload);
+	gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
 gulp.task("build", function(done){
