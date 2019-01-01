@@ -1,7 +1,7 @@
 //Первая версия галпфайла не заработала. Попробую написать его еще раз.
 var gulp = require("gulp");
-var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
+var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
@@ -17,7 +17,7 @@ var del = require("del");
 
 gulp.task("style", function(){
 	gulp.src("source/sass/style.scss")
-	.pipe(plumber())
+  .pipe(plumber())
 	.pipe(sass())
 	.pipe(postcss([
 		autoprefixer()
