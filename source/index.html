@@ -4,90 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Technomart</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
-  <body class="page">
+  <body>
     <header class="page-header">
-        <a class="page-header__logo" href="#">Техномарт</a>
-      <nav class="page-header__user-nav user-nav">
-        <ul class="user-nav__list">
-          <li class="user-nav__item">Поиск</li>
-          <li class="user-nav__item">Закладки: 0</li>
-          <li class="user-nav__item">Корзина: 0</li>
-          <li class="user-nav__item">Оформить заказ: 0</li>
+      <a class="page-header__logo">
+        <img src="img/logo.png" width="220" height="47">
+      </a>
+      <ul class="page-header__shopping-menu shopping-menu">
+        <li class="shopping-menu__item shopping-menu__item--search">
+          <form class="search" action="#" method="get">
+            <input class="search__field" type="search" name="search" placeholder="Поиск по сайту">
+            <button class="search__submit" type="submit">Найти</button>
+          </form>
+        </li>
+        <li class="shopping-menu__item shopping-menu__item">
+          <button>Закладки: 0</button>
+        </li>
+        <li class="shopping-menu__item">
+          <button>Корзина: 0</button>
+        </li>
+        <li class="shopping-menu__item">
+          <a href="#">Оформить заказ</a>
+        </li>
+      </ul>
+      <div class="page-header__inner">
+        <h1 class="page-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="page-header__contacts">
+          <a class="page-header__phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
+          <p class="page-header__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+        <ul class="page-header__user-menu user-menu">
+          <il class="user-menu__item user-menu__item--login">
+          <a class="user-menu__link user-menu__link--btn" href="#">Войти</a>
+          </il>
+          <li class="user-menu__item user-menu__item--sign-up">
+            <a class="user-menu__link user-menu__link--btn" href="#">Регистрация</a>
+          </li>
+          <li class="user-menu__item user-menu__item--user">
+            <a class="user-menu__link user-menu__link--btn" href="#">Равшан Джамшутович</a>
+          </li>
+          <li class="user-menu__item user-menu__item--logout">
+            <a class="user-menu__link user-menu__link--btn" href="#">Выйти</a>
+          </li>
+          <li class="user-menu__item user-menu__item--orders">
+            <a class="user-menu__link user-menu__link--link" href="#">Мои заказы</a>
+          </li>
+          <li class="user-menu__item user-menu__item--private">
+            <a class="user-menu__link user-menu__link--link" href="#">Личный кабинет</a>
+          </li>
         </ul>
-      </nav>
-      <h1 class="page-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="page-header__contacts contacts">
-        <p class="contacts__phone">+7 (812) 555-05-55</p>
-        <p class="contacts__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Компания</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Новости</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Спецпредлжения</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Доставка</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="page-header__login login">
-        <li class="login__item">
-          <a class="login__sign-up">Войти</a>
-        </li>
-        <li class="login__item">
-          <a class="login__sign-in">Зарегистрироваться</a>
-        </li>
-      </ul>
-      <nav class="page-header__site-nav site-nav">
-        <ul class="site-nav__list">
-          <li class="site-nav__item site-nav__item_active">
-            <a href="#" class="site-nav__link">Главная</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Компания</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Каталог</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Новости</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Спецпредложения</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Доставка</a>
-          </li>
-          <li class="site-nav__item">
-            <a href="#" class="site-nav__link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-  <main class="page-main">
-    <section class="page-main__catalog catalog">
-      <h2 class="visually-hidden">Наши товары</h2>
-      <ul class="catalog__list">
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">Материалы</a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">Инструмент</a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">Техника</a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">Скидки</a>
-        </li>
-        <li class="catalog__item">
-          <a class="catalog__link" href="#">Доставка</a>
-        </li>
-        <li class="catalog__slider slider">
-          <div class="slider__item" href="#">
-            <h3 class="slider__title">Перфораторы</h3>
-            <img class="slider__image" src="#">
-            <p class="slider__sub-title">Настоящие мужские игрушки</p>
-            <a href="#">Открыть каталог</a>
-          </div>
-          <div class="slider__item" href="#">Дрели</div>
-          <div class="slider__item" href="#">Еще что-то там</div>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <main class="page-main"></main>
 <footer class="page-footer"></footer>
 </body>
 </html>
