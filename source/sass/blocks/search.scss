@@ -1,12 +1,13 @@
 .search {
   position: relative;
-  width: 288px;
+  width: 100%;
 }
 
 .search__field {
   position: relative;
 
   width: 100%;
+  min-height: 42px;
   margin: 0;
   padding-top: 9px;
   padding-bottom: 9px;
@@ -26,19 +27,19 @@
 }
 
 .search__field::-webkit-input-placeholder {
-  @include placeholder;
+  @include top-menu-font;
 }
 
 .search__field::-moz-placeholder {
-  @include placeholder;
+  @include top-menu-font;
 }
 
 .search__field:-moz-placeholder {
-  @include placeholder;
+  @include top-menu-font;
 }
 
 .search__field:-ms-input-placeholder {
-  @include placeholder;
+  @include top-menu-font;
 }
 
 .search__submit {
@@ -58,6 +59,10 @@
 
 .search__icon {
   color: rgba(#ffffff, 0.3);
+}
+
+.search:hover {
+  background-color: $dark-bitum;
 }
 
 .search:hover .search__icon {

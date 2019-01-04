@@ -20,21 +20,31 @@
             <form class="search" action="#" method="get">
               <input class="search__field" type="search" name="search" placeholder="Поиск:">
               <button class="search__submit" type="submit">
-                <span class="visually-hidden">Найти</span>
-                <svg class="search__icon" width="17" height="17">
-                  <use xlink:href="#s-search"></use>
-                </svg>
+              <span class="visually-hidden">Найти</span>
+              <svg class="search__icon" width="17" height="17">
+                <use xlink:href="#s-search"></use>
+              </svg>
               </button>
             </form>
           </li>
-          <li class="shopping-menu__item shopping-menu__item">
-            <button>Закладки: 0</button>
+          <li class="shopping-menu__item">
+            <button class="shopping-menu__btn shopping-menu__btn--bookmark">
+            <span>Закладки: 0</span>
+            <svg class="shopping-menu__icon" width="14" height="16">
+              <use xlink:href="#s-bookmark"></use>
+            </svg>
+            </button>
           </li>
           <li class="shopping-menu__item">
-            <button>Корзина: 0</button>
+            <button class="shopping-menu__btn shopping-menu__btn--cart">
+            <span>Корзина: 0</span>
+            <svg class="shopping-menu__icon" width="15" height="15">
+              <use xlink:href="#s-cart"></use>
+            </svg>
+            </button>
           </li>
           <li class="shopping-menu__item">
-            <a href="#">Оформить заказ</a>
+            <a class="shopping-menu__btn shopping-menu__btn--order" href="#"><span>Оформить заказ</span></a>
           </li>
         </ul>
       </div>
