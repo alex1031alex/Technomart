@@ -1,0 +1,42 @@
+.page-header {
+  background-color: $light-grey;
+}
+
+.page-header__logo {
+  width: 960px;
+  margin: 0 auto;
+  height: 0;
+}
+
+.page-header__logo-link {
+  position: relative;
+  z-index: 1;
+
+  cursor: pointer;
+  display: block;
+  width: 220px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  font-size: 24px;
+  line-height: 1;
+  font-family: $cuprum;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: $red;
+  box-shadow: 0 5px 0 0 #b52933;
+
+  &:hover {
+    background-color: #ca2c37;
+    box-shadow: 0 5px 0 0 #9a212a;
+  }
+
+  &:active {
+    background-color: #ba2732;
+    box-shadow: 0 5px 0 0 #8e1e26;
+  }
+}
+

@@ -7,27 +7,37 @@
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
   </head>
   <body>
+    <div class="sprite__wrapper">
+      <include src="build/img/sprite-auto.svg"></include>
+    </div>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="img/logo.png" width="220" height="47">
-      </a>
-      <ul class="page-header__shopping-menu shopping-menu">
-        <li class="shopping-menu__item shopping-menu__item--search">
-          <form class="search" action="#" method="get">
-            <input class="search__field" type="search" name="search" placeholder="Поиск по сайту">
-            <button class="search__submit" type="submit">Найти</button>
-          </form>
-        </li>
-        <li class="shopping-menu__item shopping-menu__item">
-          <button>Закладки: 0</button>
-        </li>
-        <li class="shopping-menu__item">
-          <button>Корзина: 0</button>
-        </li>
-        <li class="shopping-menu__item">
-          <a href="#">Оформить заказ</a>
-        </li>
-      </ul>
+      <div class="page-header__logo">
+        <a class="page-header__logo-link">Техномарт</a>
+      </div>
+      <div class="page-header__shopping-menu shopping-menu">
+        <ul class="shopping-menu__list">
+          <li class="shopping-menu__item shopping-menu__item--search">
+            <form class="search" action="#" method="get">
+              <input class="search__field" type="search" name="search" placeholder="Поиск:">
+              <button class="search__submit" type="submit">
+                <span class="visually-hidden">Найти</span>
+                <svg class="search__icon" width="17" height="17">
+                  <use xlink:href="#s-search"></use>
+                </svg>
+              </button>
+            </form>
+          </li>
+          <li class="shopping-menu__item shopping-menu__item">
+            <button>Закладки: 0</button>
+          </li>
+          <li class="shopping-menu__item">
+            <button>Корзина: 0</button>
+          </li>
+          <li class="shopping-menu__item">
+            <a href="#">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
       <div class="page-header__inner">
         <h1 class="page-header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
         <div class="page-header__contacts">

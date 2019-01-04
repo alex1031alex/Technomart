@@ -1,8 +1,16 @@
-$base-font-size: 18;
 @function rem($pxs) {
 
     $rem: $pxs / $base-font-size * 1rem;
 
   @return $rem;
 }
+
+@mixin placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $cuprum;
+  color: #ffffff;
+}
+
+
 
