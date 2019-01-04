@@ -41,3 +41,27 @@
   }
 }
 
+.page-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 46px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.page-header__title {
+  width: 300px;
+  margin: 0;
+  padding-left: 46px;
+  padding-right: 46px;
+
+  font-size: 16px;
+  line-height: 23px;
+  color: $red;
+  font-style: italic;
+}
+
