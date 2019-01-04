@@ -46,11 +46,11 @@ gulp.task("webp", function(){
 });
 
 gulp.task("sprite", function(){
-	return gulp.src("source/img/icon-*.svg")
+	return gulp.src("source/img/s-*.svg")
 		.pipe(svgstore({
 			inlineSvg: true
 		}))
-		.pipe(rename("sprite.svg"))
+		.pipe(rename("sprite-auto.svg"))
 		.pipe(gulp.dest("build/img"));
 });
 
