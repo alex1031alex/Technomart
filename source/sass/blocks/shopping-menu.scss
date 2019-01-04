@@ -30,7 +30,7 @@
   min-height: 42px;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: 42px;
+  padding-left: 24px;
 
   @include top-menu-font;
   text-align: center;
@@ -77,7 +77,7 @@
 
 .shopping-menu__icon {
   position: absolute;
-  left: 18px;
+  left: 17px;
   top: center;
 
   color: rgba(#ffffff, 0.3);

@@ -48,7 +48,7 @@
 
   width: 960px;
   margin: 0 auto;
-  padding-top: 46px;
+  padding-top: 48px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -56,12 +56,45 @@
 .page-header__title {
   width: 300px;
   margin: 0;
-  padding-left: 46px;
-  padding-right: 46px;
+  padding-left: 52px;
+  padding-right: 40px;
 
   font-size: 16px;
   line-height: 23px;
   color: $red;
   font-style: italic;
+}
+
+.page-header__contacts {
+  width: 300px;
+}
+
+.page-header__phone {
+  display: block;
+  width: 270px;
+  margin-bottom: 6px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 70px;
+
+  font-size: 21px;
+  line-height: 18px;
+  text-decoration: none;
+  color: $red;
+
+  border: 3px solid #ffffff;
+  background-image: url(../../img/s-phone.svg);
+  background-repeat: no-repeat;
+  background-position: 11px center;
+
+}
+
+.page-header__address {
+  margin: 0;
+  padding-left: 10px;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
 }
 
