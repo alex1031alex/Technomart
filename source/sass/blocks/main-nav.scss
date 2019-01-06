@@ -1,3 +1,45 @@
 .main-nav {
   width: 100%;
+
+  background-color: $bitum;
+  box-shadow: 0 5px 0 0 #293449;
+}
+
+.main-nav__list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0 24px;
+
+  list-style: none;
+}
+
+.main-nav__link {
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 18px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  font-size: 17px;
+  line-height: 1;
+  font-family: $cuprum;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    background-color: #293449;
+  }
+
+  &:active {
+    background-color: #1d2739;
+  }
+
+  &:active span {
+    opacity: 0.5;
+  }
 }
