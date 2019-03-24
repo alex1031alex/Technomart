@@ -3,3 +3,119 @@
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.promo__inner {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
+  width: 100%;
+}
+
+.promo__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: contents;
+}
+
+.promo__item {
+  box-sizing: border-box;
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  padding-left: 20px;
+  padding-right: 140px;
+
+  &--bg-orange {
+    background-color: #ffbf47;
+  }
+
+  &--bg-aqua {
+    background-color: #3bbce3;
+  }
+
+  &--bg-pink {
+    background-color: #dc91d8;
+  }
+
+  &--bg-green {
+    background-color: #8ed78f;
+  }
+
+  &--bg-orange1 {
+    background-color: #ffc047;
+  }
+
+  &--materials {
+    background-image: url("../img/s-icon-1.svg");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+  }
+
+  &--tools {
+    background-image: url("../img/s-icon-2.svg");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+  }
+
+  &--techs {
+    background-image: url("../img/s-icon-3.svg");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+  }
+
+  &--discount {
+    background-image: url("../img/s-icon-4.svg");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+  }
+
+  &--delivery {
+    // order: 3;
+    background-image: url("../img/s-icon-5.svg");
+    background-repeat: no-repeat;
+    background-position: 200px center;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  &:not(:first-child) {
+    margin-left: 20px;
+  }
+}
+
+.promo__title {
+  margin: 0 0 12px 0;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 800;
+  font-family: Cuprum, Arial, sans-serif;
+  color: #fff;
+}
+
+.promo__link {
+  display: block;
+  width: 135px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.promo__carousel {
+  width: 620px;
+  order: 1;
+}
