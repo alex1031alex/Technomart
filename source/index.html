@@ -147,27 +147,33 @@
             </li>
           </ul>
           <div class="promo__carousel carousel">
+            <ol class="carousel__indicators">
+              <li class="carousel__indicator carousel__indicator--active"></li>
+              <li class="carousel__indicator"></li>
+            </ol>
             <div class="carousel__inner">
-              <a href="#">Открыть каталог</a>
               <div class="carousel__item carousel__item--active">
-                <h3>Дрели</h3>
-                <b>Соседям на радость!</b>
-                <img src="#" alt="Рабочий сверлит дрелью стену">
+                <div class="carousel__image-wrap">
+                  <img class="carousel__image" src="img/slider-perforator.jpg" alt="Сверление стены перфоратором">
+                </div>
+                <div class="carousel__caption">
+                  <h3 class="carousel__title">Перфораторы</h3>
+                  <p class="carousel__text">Настоящие мужские игрушки</p>
+                </div>
               </div>
               <div class="carousel__item">
-                <h3>Перфораторы</h3>
-                <b>Настоящие мужские игрушки</b>
-                <img src="#" alt="Рабочий сверлит стену перфоратором">
+                <div class="carousel__image-wrap">
+                  <img class="carousel__image" src="img/slider-drill.jpg" alt="Сверление стены дрелью">
+                </div>
+                <div class="carousel__caption">
+                  <h3 class="carousel__title">Дрели</h3>
+                  <p class="carousel__text">Соседям на радость!</p>
+                </div>
               </div>
             </div>
-            <button class="carousel__control carousel__control--prev" type="button">
-            </button>
-            <button class="carousel__control carousel__control--next" type="button">
-            </button>
-            <div class="carousel__indicators">
-              <button class="carousel__indicator carousel__indicator--to-slide1" type="button">1</button>
-              <button class="carousel__indicator carousel__indicator--to-slide2" type="button">2</button>
-            </div>
+            <button class="carousel__control carousel__control--prev"></button>
+            <button class="carousel__control carousel__control--next"></button>
+            <button class="carousel__btn btn">Открыть каталог</button>
           </div>
         </div>
       </section>
