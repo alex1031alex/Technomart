@@ -1,0 +1,128 @@
+.carousel {
+  position: relative;
+
+}
+
+.carousel__inner {
+  width: 620px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel__item {
+  width: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  // display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.carousel__image {
+  width: 100%;
+  height: auto;
+}
+
+.carousel__caption {
+  position: relative;
+}
+
+.carousel__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 36px;
+  line-height: 42px;
+  font-family: $cuprum;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.carousel__text {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $cuprum;
+  font-weight: 400;
+  color: #fff;
+}
+
+.carousel__btn {
+  position: absolute;
+  display: none;//Временно!
+}
+
+.carousel__indicators {
+  list-style: none;
+}
+
+.carousel__control {
+  position: absolute;
+
+  width: 22px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: none;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+
+
+
+    width: 29px;
+    height: 3px;
+
+    background-color: #fff;
+  }
+
+  &--prev {
+    top: 114px;
+    left: 25px;
+
+    &::before,
+    &::after {
+      top: 50%;
+      left: 0;
+    }
+
+    &::before {
+      transform-origin: left;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      transform-origin: left;
+      transform: translateY(-1px) rotate(45deg);
+    }
+  }
+
+  &--next {
+    top: 114px;
+    right: 20px;
+
+    &::before,
+    &::after {
+      top: 50%;
+      right: 0;
+    }
+
+    &::before {
+      transform-origin: right;
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform-origin: right;
+      transform: translateY(-1px) rotate(-45deg);
+    }
+
+  }
+
+
+}
