@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 body {
   margin: 0;
 
@@ -15,6 +10,12 @@ body {
   line-height: 1;
   color: #000000;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .sprite__wrapper {
   display: none;
