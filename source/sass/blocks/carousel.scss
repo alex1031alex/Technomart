@@ -60,11 +60,6 @@
   color: #fff;
 }
 
-.carousel__btn {
-  position: absolute;
-  display: none;//Временно!
-}
-
 .carousel__indicators {
   position: absolute;
   top: 220px;
@@ -172,5 +167,25 @@
       transform: translateY(-1px) rotate(-45deg);
     }
   }
+}
+
+.carousel__btn {
+  position: absolute;
+  left: percentage(26/620);
+  bottom: 22px;
+
+  width: 196px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $cuprum;
+  text-transform: uppercase;
+  color: #fff;
+
+  background-color: $red;
+  border: none;
+  border-radius: 3px;
 }
 
