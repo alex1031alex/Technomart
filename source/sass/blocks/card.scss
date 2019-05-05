@@ -1,5 +1,5 @@
 .card {
-  height: 100%;
+  position: relative;
 
   box-sizing: inherit;
   padding-bottom: 20px;
@@ -7,14 +7,20 @@
   border-style: solid;
   border-color: $cream;
 
+  overflow: hidden;
+
   &:hover {
     box-shadow: 0 10px 20px 0 #293449;
+  }
+
+  &--new::after {
+    @include new-mark;
   }
 }
 
 .card__title {
   width: 80%;
-  margin: 22px auto 12px auto;
+  margin: 20px auto 12px auto;
 
   font-size: 18px;
   line-height: 20px;
