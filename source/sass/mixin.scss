@@ -12,5 +12,10 @@
   color: #ffffff;
 }
 
+@mixin container {
+  width: 960px;
+  margin: 0 auto;
+}
+
 
 
