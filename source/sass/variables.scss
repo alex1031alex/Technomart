@@ -1,12 +1,19 @@
+//Colors
 $red: #ee3643;
 $brown: #b52933;
 $light-grey: #f2f6f8;
 $bitum: #32425c;
 $dark-bitum: #212a3a;
+$light-green: #63a63e;
+$cream: #f5f9f0;
+
+//Fonts
 $base-font-size: 18;
 $cuprum: "Cuprum", "Arial", sans-serif;
-$light-green: #63a63e;
 $pts: "PT Sans", "Arial", sans-serif;
+
+//Carousel indicators
 $indicator-width: 10px;
 $indicator-quantity: 2;
-$all-indicatoris-width: $indicator-width * ($indicator-quantity + 1);
+$all-indicators-width: $indicator-width * ($indicator-quantity + 1);
+
