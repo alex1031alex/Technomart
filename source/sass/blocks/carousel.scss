@@ -63,7 +63,7 @@
 .carousel__indicators {
   position: absolute;
   top: 220px;
-  left: calc(50% - #{$all-indicatoris-width}/2);
+  left: calc(50% - #{$all-indicators-width}/2);
   z-index: 10;
 
   display: flex;
@@ -175,17 +175,6 @@
   bottom: 22px;
 
   width: 196px;
-  padding-top: 11px;
-  padding-bottom: 11px;
 
-  font-size: 14px;
-  line-height: 18px;
-  font-family: $cuprum;
-  text-transform: uppercase;
-  color: #fff;
-
-  background-color: $red;
-  border: none;
-  border-radius: 3px;
 }
 
