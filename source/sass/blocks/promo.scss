@@ -1,6 +1,4 @@
 .promo {
-  width: 960px;
-  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -110,6 +108,7 @@
 .promo__item-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
 }
 
