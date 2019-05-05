@@ -44,7 +44,9 @@
             </button>
           </li>
           <li class="shopping-menu__item">
-            <a class="shopping-menu__btn shopping-menu__btn--order" href="#"><span>Оформить заказ</span></a>
+            <a class="shopping-menu__btn shopping-menu__btn--order" href="#">
+              <span>Оформить заказ</span>
+            </a>
           </li>
         </ul>
       </div>
@@ -121,7 +123,7 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="page-main__promo promo">
+      <section class="promo page-main__promo">
         <h2 class="visually-hidden">Промо-блок</h2>
         <div class="promo__inner">
           <ul class="promo__list">
@@ -169,17 +171,107 @@
               </div>
             </li>
             <li class="promo__item-wrap">
-            <div class="promo__item promo__item--discount promo__item--bg-green">
-              <h3 class="promo__title">Скидки 50%</h3>
-              <a href="#" class="promo__link">На 350% товаров</a>
-            </div>
-            <div class="promo__item promo__item--delivery promo__item--bg-orange1">
-              <h3 class="promo__title">Доставка</h3>
-              <a href="#" class="promo__link">Бесплатно</a>
-            </div>
-          </li>
+              <div class="promo__item promo__item--discount promo__item--bg-green">
+                <h3 class="promo__title">Скидки 50%</h3>
+                <a href="#" class="promo__link">На 350% товаров</a>
+              </div>
+              <div class="promo__item promo__item--delivery promo__item--bg-orange1">
+                <h3 class="promo__title">Доставка</h3>
+                <a href="#" class="promo__link">Бесплатно</a>
+              </div>
+            </li>
           </ul>
         </div>
+      </section>
+      <section class="page-main__pop-goods pop-goods">
+        <header class="pop-goods__header">
+          <h2 class="pop-goods__title">Популярные товары:</h2>
+          <a class="pop-goods__btn btn" href="#">Все популярные товары</a>
+        </header>
+        <ul class="pop-goods__list">
+          <li class="pop-goods__item">
+            <div class="card">
+              <p class="card__image-wrap">
+                <img class="card__image" src="../img/P1_BFG9000.jpg" alt="Перфоратор Bosch BFG9000" width="220" height="160">
+              </p>
+              <div class="card__buttons-wrap">
+                <a class="card__btn card__btn--buy" href="#">
+                  <svg class="card__btn-icon" width="15" height="15">
+                    <use xlink:href="#s-cart"></use>
+                  </svg>
+                  <span>Купить</span>
+                </a>
+                <button class="card__btn card__btn--bookmark" type="button">В закладки</button>
+              </div>
+              <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
+              <p class="card__old-price">32500 р.</p>
+              <a class="card__price" href="#">25500 р.</a>
+            </div>
+          </li>
+          <li class="pop-goods__item">
+            <div class="card">
+              <p class="card__image-wrap">
+                <img class="card__image" src="../img/P2_BFG3000.jpg" alt="Перфоратор Bosch BFG9000" width="220" height="160">
+              </p>
+              <div class="card__buttons-wrap">
+                <a class="card__btn card__btn--buy" href="#">
+                  <svg class="card__btn-icon" width="15" height="15">
+                    <use xlink:href="#s-cart"></use>
+                  </svg>
+                  <span>Купить</span>
+                </a>
+                <button class="card__btn card__btn--bookmark" type="button">В закладки</button>
+              </div>
+              <h3 class="card__title">Перфоратор BOSCH BFG 3000</h3>
+              <p class="card__old-price">22500 р.</p>
+              <a class="card__price" href="#">15500 р.</a>
+            </div>
+          </li>
+          <li class="pop-goods__item">
+            <div class="card">
+              <p class="card__image-wrap">
+                <img class="card__image" src="../img/P3_BFG6000.jpg" alt="Перфоратор Bosch BFG9000" width="220" height="160">
+              </p>
+              <div class="card__buttons-wrap">
+                <a class="card__btn card__btn--buy" href="#">
+                  <svg class="card__btn-icon" width="15" height="15">
+                    <use xlink:href="#s-cart"></use>
+                  </svg>
+                  <span>Купить</span>
+                </a>
+                <button class="card__btn card__btn--bookmark" type="button">В закладки</button>
+              </div>
+              <h3 class="card__title">Перфоратор BOSCH BFG 6000</h3>
+              <p class="card__old-price">30500 р.</p>
+              <a class="card__price" href="#">25500 р.</a>
+            </div>
+          </li>
+          <li class="pop-goods__item">
+            <div class="card">
+              <p class="card__image-wrap">
+                <img class="card__image" src="../img/P4_BFG2000.jpg" alt="Перфоратор Bosch BFG9000" width="220" height="160">
+              </p>
+              <div class="card__buttons-wrap">
+                <a class="card__btn card__btn--buy" href="#">
+                  <svg class="card__btn-icon" width="15" height="15">
+                    <use xlink:href="#s-cart"></use>
+                  </svg>
+                  <span>Купить</span>
+                </a>
+                <button class="card__btn card__btn--bookmark" type="button">В закладки</button>
+              </div>
+              <h3 class="card__title">Перфоратор BOSCH BFG 9000</h3>
+              <p class="card__old-price"></p>
+              <a class="card__price" href="#">12500 р.</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="brands">
+      </section>
+      <section class="service">
+      </section>
+      <section class="contacts">
       </section>
     </main>
   <footer class="page-footer"></footer>

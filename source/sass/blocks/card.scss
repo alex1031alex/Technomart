@@ -1,7 +1,157 @@
-.card__buy {
+.card {
+  height: 100%;
+
+  box-sizing: inherit;
+  padding-bottom: 20px;
+  border-width: 1px 2px;
+  border-style: solid;
+  border-color: $cream;
+
+  &:hover {
+    box-shadow: 0 10px 20px 0 #293449;
+  }
+}
+
+.card__title {
+  width: 80%;
+  margin: 22px auto 12px auto;
+
+  font-size: 18px;
+  line-height: 20px;
+  font-family: $pts;
+  text-align: center;
+}
+
+.card__image-wrap {
+  flex-shrink: 0;
+  width: 100%;
+  min-height: 160px;
+}
+
+.card:hover .card__image-wrap,
+.card:focus .card__image-wrap {
   display: none;
 }
 
-.card__bookmark {
-  display: none;
+.card__image {
+  display: block;
 }
+
+.card__old-price {
+  margin-bottom: 10px;
+  min-height: 18px;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $pts;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: line-through;
+  color: #a9a9a9;
+}
+
+.card__price {
+  position: relative;
+
+  display: block;
+  width: 142px;
+  margin: 0 auto;
+  padding: 10px 0;
+
+  font-size: 17px;
+  line-height: 18px;
+  font-family: $pts;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: #fff;
+
+  background-color: $red;
+}
+
+.card__buttons-wrap {
+  display: none;
+
+  min-height: 160px;
+  padding-top: 45px;
+}
+
+.card:hover .card__buttons-wrap,
+.card:focus .card__buttons-wrap {
+  display: block;
+}
+
+.card__btn {
+  position: relative;
+
+  display: block;
+  width: 134px;
+  margin: 0 auto 0 auto;
+
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border-radius: 3px;
+
+  &:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &--buy {
+    padding: 12px 0 9px 30px;
+
+    text-indent: 20px;
+    color: #fff;
+
+    background-color: $green;
+    border-bottom: 3px solid #367315;
+
+    &:hover,
+    &:focus {
+      background-color: $light-green;
+    }
+
+    &:active {
+      background-color: $dark-green;
+      border-bottom-color: $dark-green;
+    }
+  }
+
+  &--bookmark {
+    padding: 9px 0 9px 0;
+
+    color: $bitum;
+
+    background-color: transparent;
+    border: 3px solid $light-green;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      border-color: $bitum;
+    }
+
+    &:active {
+      border-color: rgba(50, 66, 92, 0.3);
+      color: rgba(50, 66, 92, 0.3);
+    }
+  }
+}
+
+.card__btn-icon {
+  position: absolute;
+  left: 15px;
+  opacity: 0.3;
+}
+
+.card__btn--buy:hover .card__btn-icon,
+.card__btn--buy:focus .card__btn-icon,
+.card__btn--buy:active .card__btn-icon {
+  opacity: 1;
+}
+

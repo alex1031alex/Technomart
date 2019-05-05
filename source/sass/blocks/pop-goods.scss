@@ -1,9 +1,19 @@
 .pop-goods {
-  @include container;
   padding: 0 10px;
 }
 
+.pop-goods__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.pop-goods__item {
+  width: 220px;
+}
+
 .pop-goods__header {
+  margin-bottom: 20px;
   padding: 25px 26px 25px 26px;
 
   display: flex;
