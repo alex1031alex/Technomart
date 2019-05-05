@@ -15,4 +15,13 @@
   background-color: $red;
   border: none;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    background-color: #ca2c37;
+  }
+
+  &:active {
+    background-color: #ba2732;
+  }
 }

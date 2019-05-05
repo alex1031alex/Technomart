@@ -139,7 +139,18 @@
 
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
 }
+
+
 
 .promo__carousel {
   width: 620px;
