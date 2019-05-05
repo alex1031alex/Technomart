@@ -22,6 +22,19 @@
   margin-bottom: 20px;
 
   border: 1px solid #ebebeb;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+  }
+
+  &:active {
+    box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
+  }
+}
+
+.brands__item:active .brands__image {
+  opacity: 0.3;
 }
 
 .brands__image {
