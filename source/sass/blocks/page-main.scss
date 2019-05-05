@@ -5,5 +5,9 @@
 
 .page-main__pop-goods {
   @include container;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
+}
+
+.page-main__brands {
+  @include container;
 }

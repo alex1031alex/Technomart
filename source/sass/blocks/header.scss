@@ -1,0 +1,23 @@
+.header {
+  padding: 25px 26px 25px 26px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: $cream;
+}
+
+.header__title {
+  font-size: 30px;
+  line-height: 1;
+  font-family: $cuprum;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $bitum;
+}
+
+.header__btn {
+  width: 254px;
+}
