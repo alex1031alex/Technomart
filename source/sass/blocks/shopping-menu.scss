@@ -58,15 +58,15 @@
 
   &--order {
     padding-left: 0;
-    background-color: $light-green;
+    background-color: $green;
 
     &:hover,
     &:focus {
-      background-color: #5fbb2d;
+      background-color: $light-green;
     }
 
     &:active {
-      background-color: #518534;
+      background-color: $dark-green;
     }
 
     &:active span {
