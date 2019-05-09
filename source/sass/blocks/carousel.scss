@@ -124,6 +124,7 @@
     height: 3px;
 
     background-color: #fff;
+    cursor: pointer;
   }
 
   &--prev {
@@ -167,6 +168,10 @@
       transform: translateY(-1px) rotate(-45deg);
     }
   }
+
+  &--disable {
+    opacity: 0.4;
+  }
 }
 
 .carousel__btn {
@@ -175,6 +180,5 @@
   bottom: 22px;
 
   width: 196px;
-
 }
 
