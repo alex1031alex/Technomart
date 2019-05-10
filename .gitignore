@@ -7,6 +7,8 @@
 *.sublime*
 build/
 node_modules/
+Layout/
+preview/
 npm-debug.*
 source/css/*.css
 source/img/desktop.ini
