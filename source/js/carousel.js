@@ -47,7 +47,8 @@ next.addEventListener('click', function(evt){
   }
 });
 
-Array.prototype.slice.call(indicators).forEach(function(indicator){
+// Нужно прописать добавление/удаление disable при клике на индикаторы
+Array.prototype.slice.call(indicators).forEach(function(indicator, i){
   indicator.addEventListener('click', function(){
     if (!indicator.classList.contains('carousel__indicator--active')) {
       var activeIndicator = document.querySelector('.carousel__indicator--active');
@@ -55,6 +56,18 @@ Array.prototype.slice.call(indicators).forEach(function(indicator){
       activeIndicator.classList.remove('carousel__indicator--active');
       document.getElementById(indicator.getAttribute('aria-controls')).classList.add('carousel__item--active');
       indicator.classList.add('carousel__indicator--active');
-    }
+
+      if (i == 0) {
+        prev.classList.add('carousel__control--disable');
+      } else if (prev.classList.contains('carousel__control--disable')) {
+        prev.classList.remove('carousel__control--disable');
+      };
+
+      if (i == indicators.length-1) {
+        next.classList.add('carousel__control--disable');
+      } else if (next.classList.contains('carousel__control--disable')) {
+        next.classList.remove('carousel__control--disable');
+      };
+    };
   });
 });
